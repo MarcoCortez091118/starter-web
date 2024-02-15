@@ -1,0 +1,25 @@
+Los patrones de diseño son soluciones típicas a problemas comunes en el diseño de software. Son como plantillas que pueden ser aplicadas a situaciones de desarrollo de software reales y se utilizan para resolver problemas de diseño de código de manera eficiente. Estos patrones no son diseños terminados que se pueden convertir directamente en código, sino descripciones o plantillas para cómo resolver un problema que pueden ser utilizadas en muchas situaciones diferentes.
+
+Los patrones de diseño se clasifican típicamente en tres grupos:
+
+    Creacionales: Se enfocan en cómo se crean las instancias de las clases. Ejemplos incluyen el Singleton, Factory Method, Abstract Factory, Builder y Prototype.
+
+    Estructurales: Se ocupan de la composición de clases o objetos. Ejemplos de estos son Adapter, Composite, Proxy, Flyweight, Facade y Decorator.
+
+    De comportamiento: Se ocupan de la comunicación entre objetos. Incluyen patrones como Observer, Strategy, Command, Iterator y State.
+
+Los patrones de diseño están estrechamente relacionados con los principios SOLID, que son un conjunto de cinco principios de diseño orientado a objetos que facilitan la creación de sistemas de software comprensibles, flexibles y mantenibles. SOLID es un acrónimo de:
+
+    Single Responsibility Principle (Principio de Responsabilidad Única): Una clase debe tener una y solo una razón para cambiar, lo que significa que una clase debe tener solo una tarea o responsabilidad.
+
+    Open/Closed Principle (Principio de Abierto/Cerrado): Las entidades de software (clases, módulos, funciones, etc.) deben estar abiertas para la extensión, pero cerradas para la modificación.
+
+    Liskov Substitution Principle (Principio de Sustitución de Liskov): Los objetos en un programa deben ser reemplazables con instancias de sus subtipos sin alterar la corrección del programa.
+
+    Interface Segregation Principle (Principio de Segregación de Interfaces): Muchas interfaces específicas de cliente son mejores que una interfaz de propósito general.
+
+    Dependency Inversion Principle (Principio de Inversión de Dependencias): Depende de abstracciones, no de concreciones. Esto significa que los módulos de alto nivel no deben depender de los módulos de bajo nivel, ambos deben depender de abstracciones.
+
+Estos principios guían a los desarrolladores en el uso de patrones de diseño al sugerir cómo deben estructurarse las interacciones entre clases y objetos. Por ejemplo, al utilizar el patrón Strategy (un patrón de comportamiento) se puede facilitar el cumplimiento del principio Open/Closed, ya que permite variar el comportamiento de una clase sin modificarla. Del mismo modo, aplicar el patrón Factory Method (un patrón creacional) puede ayudar a adherirse al principio de Inversión de Dependencias, ya que permite que el proceso de creación de objetos se haga sin depender de clases concretas.
+
+En resumen, los patrones de diseño son prácticas recomendadas que se aplican para resolver problemas específicos en el diseño de software, y los principios SOLID proporcionan la base para escribir un software más limpio y manejable que puede ser ampliado y mantenido con facilidad.
