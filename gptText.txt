@@ -1,3 +1,22 @@
+El patrón de diseño hexagonal, también conocido como "Ports and Adapters", es un patrón arquitectónico que se utiliza en el desarrollo de software. Este patrón fue ideado por Alistair Cockburn y tiene como objetivo crear un sistema desacoplado que promueva la separación de preocupaciones y facilite el aislamiento de los componentes del sistema.
+
+Aquí hay algunos puntos clave sobre el patrón de diseño hexagonal:
+
+    Separación entre la lógica de negocio y las interacciones externas: El núcleo de la aplicación (donde reside la lógica de negocio) no debería depender de detalles como la base de datos, el sistema de archivos, interfaces de usuario o cualquier agente externo. En cambio, estos detalles se deben abstraer a través de 'puertos'.
+
+    Puertos: En el contexto de este patrón, un puerto es una abstracción que define un punto de acceso como una interfaz. La lógica de negocio define los puertos a través de los cuales puede comunicarse con el exterior (por ejemplo, para obtener datos o enviar resultados).
+
+    Adaptadores: Los adaptadores son implementaciones que conectan el mundo externo con los puertos definidos por la lógica de negocio. Por ejemplo, podrías tener un adaptador de base de datos que implementa la interfaz de un puerto que define cómo se deben cargar los datos.
+
+    Intercambiabilidad: Gracias a este patrón, puedes cambiar los adaptadores sin tener que cambiar la lógica de negocio central. Esto es útil para la sustitución de componentes, como cambiar de un sistema de base de datos a otro, o para fines de pruebas (mocking/stubbing) donde los adaptadores de prueba pueden reemplazar a los adaptadores reales.
+
+    Hexágono: La elección de un hexágono es arbitraria; simplemente representa el núcleo central de la aplicación rodeado de varios puertos. La idea es que al igual que un hexágono tiene muchos lados, una aplicación puede tener muchas interfaces a través de las cuales se comunica con el mundo exterior.
+
+    Fomento de SOLID: Este patrón apoya los principios SOLID, especialmente el principio de inversión de dependencias (D) y el principio de responsabilidad única (S), al separar claramente la lógica de negocio de las preocupaciones externas.
+
+El patrón de diseño hexagonal es particularmente popular en aplicaciones que necesitan ser robustas, escalables y fáciles de mantener. Es común en entornos donde las pruebas automatizadas, la integración continua y el despliegue continuo son prácticas estándar.
+__________________________________________________________
+
 Además del patrón de diseño hexagonal, existen varios otros patrones arquitectónicos que se utilizan comúnmente en el desarrollo de software. Estos patrones ayudan a resolver problemas de organización del código, mantenimiento, escalabilidad y comunicación entre componentes. Algunos de estos patrones incluyen:
 
     Modelo-Vista-Controlador (MVC): Separa la aplicación en tres componentes principales: el modelo (datos), la vista (interfaz de usuario) y el controlador (lógica de negocio que actúa como intermediario entre modelo y vista).
