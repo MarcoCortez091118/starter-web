@@ -1,5 +1,0 @@
-Un método abstracto es un método que se declara, pero no se implementa en la clase en la que se declara. Es decir, no tiene cuerpo y, por ende, no proporciona ninguna funcionalidad por sí mismo. En su lugar, un método abstracto define una firma que debe ser implementada por las clases derivadas.
-
-En la programación orientada a objetos, los métodos abstractos se utilizan en clases abstractas, que son clases que no se pueden instanciar por sí mismas y están destinadas a ser subclases. La idea es proporcionar una estructura común que otras clases pueden heredar y sobre la cual deben construir. Al declarar un método como abstracto, se obliga a las clases derivadas a proporcionar una implementación concreta de ese método, asegurando que todas las clases derivadas tengan un comportamiento específico según lo dictado por la clase base abstracta.
-
-Por ejemplo, si tienes una clase abstracta Animal con un método abstracto hacerSonido(), cualquier subclase (como Perro o Gato) que herede de Animal estará obligada a implementar el método hacerSonido() para definir cómo hace sonido ese animal específico.
