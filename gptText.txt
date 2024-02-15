@@ -1,0 +1,31 @@
+Además del patrón de diseño hexagonal, existen varios otros patrones arquitectónicos que se utilizan comúnmente en el desarrollo de software. Estos patrones ayudan a resolver problemas de organización del código, mantenimiento, escalabilidad y comunicación entre componentes. Algunos de estos patrones incluyen:
+
+    Modelo-Vista-Controlador (MVC): Separa la aplicación en tres componentes principales: el modelo (datos), la vista (interfaz de usuario) y el controlador (lógica de negocio que actúa como intermediario entre modelo y vista).
+
+    Modelo-Vista-Presentador (MVP): Una variante del MVC, el MVP también separa la aplicación en tres capas, pero con una interacción ligeramente diferente entre ellas. El presentador se encarga de toda la lógica de la interfaz de usuario, mejorando así la separación entre la lógica de la interfaz de usuario y la lógica de negocio.
+
+    Modelo-Vista-ViewModel (MVVM): Enfocado principalmente en aplicaciones con binding de datos, como las aplicaciones WPF de Microsoft. El ViewModel actúa como un enlace entre la Vista y el Modelo, facilitando las pruebas y el mantenimiento.
+
+    Arquitectura Basada en Capas (Layered Architecture): Organiza el software en capas horizontales, cada una de las cuales realiza un conjunto de tareas relacionadas y ofrece servicios a la capa superior mientras oculta los detalles de implementación.
+
+    Arquitectura Orientada a Servicios (SOA): Consiste en descomponer las funciones de la aplicación en servicios independientes con interfaces bien definidas que pueden ser llamadas en secuencia o en paralelo para realizar las operaciones de negocio.
+
+    Arquitectura de Microservicios: Similar a SOA, pero con un enfoque en servicios más pequeños y desacoplados que son fáciles de desarrollar, desplegar y mantener de manera independiente.
+
+    Arquitectura Orientada a Eventos: Un estilo de arquitectura que promueve la producción, detección, consumo y reacción a eventos.
+
+    Arquitectura de Espacios de Tuplas (Tuple-Space Architecture): Utiliza un espacio de tuplas como medio de comunicación entre diferentes partes de un sistema distribuido.
+
+    Arquitectura Cliente-Servidor: Divide el sistema en dos aplicaciones, donde el servidor proporciona servicios y el cliente los consume.
+
+    Arquitectura Peer-to-Peer (P2P): Cada nodo o instancia de aplicación en la red puede actuar tanto como cliente como servidor.
+
+    Arquitectura de N-Tier / Multi-tier: Una extensión del modelo cliente-servidor que incluye varias capas de procesamiento, como la presentación, la lógica de negocio y la capa de datos.
+
+    Arquitectura de Broker: Utiliza un intermediario, o broker, para coordinar y controlar la comunicación entre componentes distribuidos.
+
+    Arquitectura Pipe-and-Filter: Consiste en una cadena de procesos, donde la salida de cada proceso es la entrada del siguiente, como en una línea de montaje.
+
+    Arquitectura de Plugins: Permite la extensión de una aplicación mediante módulos o componentes que se pueden agregar o quitar sin modificar el sistema base.
+
+    Arquitectura CQRS (Command Query Responsibility Segregation): Separa la lógica que modifica el estado del sistema (comandos) de la lógica que lee el estado (consultas), permitiendo que se optimicen por separado.
